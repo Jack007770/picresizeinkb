@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Pic Resize in KBs</title>
+    <!-- Custom SVG Icon matching the user's uploaded image description (Blue bg, white cards, mountains, arrow) -->
+    <link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Crect x='10' y='10' width='50' height='50' rx='8' fill='white'/%3E%3Cpath d='M15 50L30 30L45 50H15Z' fill='%2310B981'/%3E%3Cpath d='M35 50L45 38L55 50H35Z' fill='%23059669'/%3E%3Ccircle cx='45' cy='25' r='5' fill='%23FBBF24'/%3E%3Cpath d='M65 30Q80 30 75 50' stroke='%2334D399' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M75 50L70 42M75 50L82 44' stroke='%2334D399' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Crect x='55' y='55' width='35' height='35' rx='6' fill='white'/%3E%3Cpath d='M60 82L70 68L80 82H60Z' fill='%2310B981'/%3E%3Cpath d='M75 82L82 74L89 82H75Z' fill='%23059669'/%3E%3Ccircle cx='80' cy='65' r='3.5' fill='%23FBBF24'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Crect x='10' y='10' width='50' height='50' rx='8' fill='white'/%3E%3Cpath d='M15 50L30 30L45 50H15Z' fill='%2310B981'/%3E%3Cpath d='M35 50L45 38L55 50H35Z' fill='%23059669'/%3E%3Ccircle cx='45' cy='25' r='5' fill='%23FBBF24'/%3E%3Cpath d='M65 30Q80 30 75 50' stroke='%2334D399' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M75 50L70 42M75 50L82 44' stroke='%2334D399' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Crect x='55' y='55' width='35' height='35' rx='6' fill='white'/%3E%3Cpath d='M60 82L70 68L80 82H60Z' fill='%2310B981'/%3E%3Cpath d='M75 82L82 74L89 82H75Z' fill='%23059669'/%3E%3Ccircle cx='80' cy='65' r='3.5' fill='%23FBBF24'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/react-image-crop@11.0.0/dist/ReactCrop.css">
+    <style>
+      /* Custom scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #86efac;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4ade80;
+      }
+      /* Dark mode scrollbar adjustments */
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4b5563;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #6b7280;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-image-crop": "https://esm.sh/react-image-crop@11.0.0?external=react,react-dom"
+  }
+}
+</script>
+</head>
+  <body class="bg-green-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 antialiased selection:bg-green-200 selection:text-green-900 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
